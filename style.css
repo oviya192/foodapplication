@@ -1,0 +1,388 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+body{
+    min-height: 100vh;
+    background: url(pexels-fwstudio-164005.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+header{
+
+    height: 12vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    background:rgba(165, 95, 42, 0.266);
+    padding: 20px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+header .logo{
+    font-weight:bolder;
+    font-size: 30px;
+    margin-top: 0px;
+    color:black;
+}
+
+.logo{
+    display:flex;
+    position: relative;
+    height: 100%;
+    width: 50%;
+    margin:0px 10px;
+   
+}
+
+.pic{
+    position: relative;
+    height: 60px;
+    
+
+}
+
+.fs{
+    position:relative;
+    font-weight: bold;
+    margin-left:7px;
+    margin-top: 8px;
+
+}
+header .navbar ul{
+list-style: none;
+
+}
+
+header .navbar ul li{
+    position: relative;
+    float: left;
+
+}
+.navbar ul li a{
+    font-size: 20px;
+    padding: 10px 20px;
+    color: black;
+    display: block;
+    
+}
+ 
+.navbar ul li ul li a{
+    background-color: rgba(165, 95, 42, 0.266);
+    right: 3;
+    
+}
+
+
+
+.navbar ul li a:hover{
+    background: rgba(165, 95, 42, 0.266);
+    color: white;
+}
+.navbar ul li ul{
+    position: absolute;
+    width: 150px;
+    background:rgba(165, 95, 42, 0.266);
+    display: none;
+}
+.navbar ul li ul li{
+    width: 100%;
+    border-top: .5px solid white;
+}
+.navbar ul li ul li ul{
+    left: 150px;
+    top: 0;
+}
+
+
+
+.navbar ul li:focus-within >ul,
+.navbar ul li:hover > ul{
+    display: initial;
+}
+
+header label{
+    font-size: 20px;
+    color: rgba(165, 95, 42, 0.266);
+    cursor: pointer;
+    display: none;
+}
+
+#menu-bar{
+    display: none;
+}
+
+.login{
+    position: absolute;
+    left: 70%;
+    color:black;
+    padding: 10px 20px;
+    background-color:rgba(159, 76, 21, 0.544);
+    margin-left: 360px;
+    font-size: large;
+    border-color: rgba(199, 96, 18, 0.266);
+    border-radius: 50px;
+}
+.login:hover{
+    color: white;
+    background-color: rgba(139, 55, 15, 0.54);
+}
+
+.Section_top{
+    width: 70pc;
+    height: 36pc;
+    margin-left: 200px;
+    margin-top: 25px;
+    overflow:auto;
+    position:static;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    animation: change 10s infinite ease-in-out ;
+ }
+ .fd{
+    margin-left: 690px;
+    margin-top: 10px;
+    color: black
+ }
+
+ .training-section {
+    width: 100%;
+    /* height: 700px; */
+   
+    background-size:cover;
+    padding-bottom: 50px;
+}
+
+.training-section h1 {
+    text-align: center;
+    padding: 25px 0px;
+}
+
+.container {
+    width: 1175px;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    display: flex;
+    border: 1px solid black;
+}
+
+.training-items {
+    flex-basis: 23%;
+    margin: 10px 0px;
+    text-align: center;
+    padding: 5px 20px;
+    background: rgba(165, 95, 42, 0.266);
+    box-shadow: 0px 0px 10px 3px black;
+}
+.by{
+    margin-bottom:5px;
+}
+
+.pizza
+{
+    margin-bottom:5px; 
+}
+.shawarma{
+    margin-bottom:5px; 
+}
+.kebab{
+    margin-bottom:5px; 
+}
+.soup{
+    margin-bottom:5px; 
+}
+.waffles{
+    margin-bottom:5px; 
+}
+.shakes{
+    margin-bottom:5px; 
+}
+.coffee{
+    margin-bottom:5px; 
+}
+
+.training-items h3 {
+    padding: 10px 0px;
+}
+
+.training-items p {
+    font-size: 13px;
+    padding: 10px;
+}
+
+.training-items button {
+    background:black;
+    padding: 10px 25px;
+    border: none;
+    color:white;
+    border-radius: 10px;
+}
+
+.training-items:hover {
+    background:rgba(139, 55, 15, 0.54);
+}
+
+.training-items:hover h3,
+.training-items:hover p {
+    color: black;
+}
+
+.training-items:hover button {
+    background-color:white;
+    color: black;
+}
+
+.footer{
+    background-color:rgba(139, 55, 15, 0.54);
+    
+}
+.div-container{
+    margin-left: 10%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 20px;
+}
+.div-container h3{
+    font-size: 23px;
+}
+.div-container{
+    font-size: large;
+}
+@media only screen and (min-width:200px) and (max-width:767px) {
+    .cardContainer{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .card {
+        margin: 10px;
+    }
+}
+
+@media (max-width:576px) {
+    .logo {
+        margin-left: 75px;
+    }
+
+   
+
+    .checkbtn {
+        display: block;
+    }
+
+    #check:checked~.nav-links {
+        /* display: block; */
+        display: flex;
+    }
+}
+
+@media only screen and (min-width:200px) and (max-width:767px) {
+    .container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .training-items {
+        margin: 10px;
+    }
+}
+ @keyframes change{
+    0%{
+       background-image: url(idly.webp);
+    }
+    20%{
+       background-image: url(meals.jpg);
+    }
+    40%{
+       background-image: url(chappathi.jpg);
+    }
+    60%{
+       background-image: url(korean.webp);
+    }
+    80%{
+       background-image: url(Sushi.webp);
+    }
+    100%{
+      background-image: url(noodles.webp);
+   }
+
+}
+
+
+.insta{
+    height: 25px;
+}
+.whatsapp{
+    height: 25px;
+}
+.Twitter{
+    height: 25px;
+}
+.linkedin{
+    height: 25px;
+}
+.youtube{
+    height: 25px;
+}
+
+.cpr{
+    height: 20px;
+}
+
+
+@media(max-width:991px){
+    header{
+        padding: 20px;
+        
+    }
+    header label{
+        display: initial;
+        
+    }
+    .navbar{
+        position: absolute;
+        margin-top: -117%;
+        top: 100%;
+        left: 0;right: 0;
+        background: rgba(165, 95, 42, 0.266);
+        border-top: 1px solid white;
+        display: none;
+        
+       
+    }
+    .navbar ul li{
+        width: 100%;
+
+    }
+    .navbar ul li ul{
+        position: relative;
+        width: 100%;
+        height: 5vh;
+    }
+    .navbar ul li ul li{
+        background:rgba(165, 95, 42, 0.266);
+    }
+    .navbar ul li ul li ul{
+        width: 100%;
+        left: 0;
+    }
+    #menu-bar:checked~.navbar{
+        display: initial;
+
+    }
+
+}
+
+
+
+
+
